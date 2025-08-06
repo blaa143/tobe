@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Mentee Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple: #3e227a;
+            --pink: #ff33c2;
+            --blue: #407bff;
+            --white: #ffffff;
+            --text-color: #f0f2f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+            color: var(--white);
+            padding: 20px 80px;
+        }
+
+        /* Header/Navigation Bar */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: calc(100vh - 80px);
+            padding-top: 50px;
+        }
+
+        .hero-content-left {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .hero-title {
+            font-size: 3.5em;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-title .highlight {
+            color: var(--blue);
+        }
+
+        .hero-description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin-bottom: 30px;
+        }
+
+        .hero-content-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Button Styles */
+        .btn {
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-signup {
+            background-color: var(--blue);
+            color: var(--white);
+            border: 2px solid var(--blue);
+        }
+
+        .btn-signup:hover {
+            background-color: transparent;
+            color: var(--blue);
+        }
+
+        .btn-signin {
+            background-color: var(--blue);
+            color: var(--white);
+            border: 2px solid var(--blue);
+        }
+
+        .btn-signin:hover {
+            background-color: transparent;
+            color: var(--purple);
+        }
+
+        .cta-button {
+            background-color: var(--blue);
+            color: var(--white);
+            padding: 15px 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #5d9aff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">MMM</div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Display All</a></li> 
+                    <!-- In your homepage file, currently on the Live Server -->
+
+                     <li><a href="http://localhost/pmms/register.php" class="btn btn-signup">Sign Up</a></li>
+
+<!-- ... and for the Get Started button ... -->
+ 
+                    <li><a href="http://localhost/pmms/auth_portal.php " class="btn btn-signin">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hero-section">
+            <div class="hero-content-left">
+                <h1 class="hero-title">
+                    Welcome to <br>
+                    <span class="highlight">Mentor Mentee Management System</span>
+                </h1>
+                <p class="hero-description">
+                    A mentor-mentee management system is a application that helps
+                    organizations to manage their mentoring programs. It can be used to
+                    match mentors and mentees, track their progress, and facilitate
+                    communication between them.
+                </p>
+                <a href="register.php" class="btn cta-button">Get Started</a>
+            </div>
+            <div class="hero-content-right">
+                <!-- Placeholder for the isometric image -->
+                <img src="your-isometric-image.png" alt="Isometric illustration" class="hero-image">
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[2025-08-04 14:25:29] [FAILURE] [::1] Failed login attempt for username/email: 'admin1234' from IP: ::1.
+[2025-08-04 14:25:53] [SUCCESS] [::1] User 'admin1234' logged in successfully.
+[2025-08-04 14:44:52] [FAILURE] [::1] Failed login attempt for username/email: 'admin1234' from IP: ::1.
+[2025-08-04 14:45:04] [SUCCESS] [::1] User 'admin1234' logged in successfully.
+[2025-08-04 14:58:37] [FAILURE] [::1] Failed login attempt for username/email: 'admin1234' from IP: ::1.
+[2025-08-04 14:58:57] [SUCCESS] [::1] User 'admin1234' logged in successfully.
+[2025-08-04 15:10:24] [FAILURE] [::1] Failed login attempt for username/email: 'admin1234' from IP: ::1.
+[2025-08-04 15:10:33] [SUCCESS] [::1] User 'admin1234' logged in successfully.
